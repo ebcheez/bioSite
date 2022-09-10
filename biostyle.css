@@ -7,3 +7,45 @@
     Purpose: Stylesheet for the bioSite project
 */
 
+body {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+#header {
+    overflow: auto;
+    height: 100%;
+}
+#bioName, #nav, #open {
+    background-color: #9080F2;
+    float: left;
+    margin: 0px;
+}
+
+li {
+    display: inline;
+    padding: 40px;
+}
+a:link {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+a:visited {
+    color: #F2F2F2;
+}
+
+#bioName {
+    width: 23%;
+    text-align: left;
+    border: solid 1px black;
+}
+#open {
+    width: 23%;
+    text-align: right;
+    border: solid 1px black;
+}
+#nav {
+    width: 50%;
+    text-align: center;
+    border: solid 1px black;
+}
