@@ -16,10 +16,10 @@ body {
     overflow: auto;
     width: 100%;
     height: 100%;
+    background-color: #705CF2;
     border: solid 1px #F2F2F2;
 }
 #bioName, #nav, #open {
-    background-color: #705CF2;
     float: left;
     margin: 0px;
 }
@@ -38,11 +38,11 @@ a:visited {
 
 #bioName {
     width: 25%;
-    text-align: left;
+    text-align: center;
 }
 #open {
     width: 25%;
-    text-align: right;
+    text-align: center;
 }
 #nav {
     width: 50%;
@@ -51,11 +51,20 @@ a:visited {
 
 .content {
     color: #F2F2F2;
-    max-width: 70%;
+    max-width: 90%;
     min-width: 50%;
     background-color: #9080F2;
     border-left: solid 1px #F2F2F2;
     border-right: solid 1px #F2F2F2;
     margin: auto;
     padding: 10px;
+}
+
+img.intro-pics {
+    height: 200px;
+    padding: 0px 5px;
+}
+.opening-pics {
+    margin: 20px 70px;
+
 }
