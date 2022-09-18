@@ -2,9 +2,15 @@
     Project: bioSite
     Filename: biostyle.css
     Written by: Eric McCool
-    Written on: 9/7/22
     Instructor: Krasso
     Purpose: Stylesheet for the bioSite project
+    Written on: 9/7/22 - initial commit
+    Revised on: 9/9/22 - created some pages
+    Revised on: 9/11/22 - created page header
+    Revised on: 9/15/22 - added images, css 
+    Revised on: 9/18/22 - placed images, added more content
+
+    TODO: keep it clean, keep it DRY
 */
 
 body {
