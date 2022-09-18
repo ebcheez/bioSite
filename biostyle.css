@@ -113,7 +113,11 @@ figcaption {
     font-size: 90%;
     text-align: center;
 }
-
+p img {
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border: 1px solid #F2F2F2;
+}
 
 footer {
     width: 100%;
