@@ -126,8 +126,14 @@ p img {
     border: 1px solid #F2F2F2;}
 p a:link {
     color: #614BF2;
-    text-decoration: none;
-}
+    text-decoration: none;}
+p a:visited {
+    color: #614BF2;}
+p a:hover {
+    text-decoration: underline;}
+p a:active {
+    color: #800080;
+}    
 footer {
     width: 100%;
     height: 45px;
