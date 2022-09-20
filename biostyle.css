@@ -96,6 +96,7 @@ img.intro-center {
 .content p {
     text-indent: 45px;
     text-align: justify;
+    line-height: 1.4em;
     font-family: 'Manrope', sans-serif;
     font-size: larger;
     padding-left: 25px;
@@ -123,7 +124,7 @@ p img {
     margin-right: 25px;
     margin-bottom: 10px;
     border: 1px solid #F2F2F2;}
-article a:link {
+p a:link {
     color: #614BF2;
     text-decoration: none;
 }
