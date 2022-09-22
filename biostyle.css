@@ -41,7 +41,7 @@ body {
     width: 50%;
     height: 100%;
     font-family: 'Archivo', sans-serif;
-    font-size: small;
+    font-size: medium;
     text-align: center;
     padding-top: 30px;}
 #author {
@@ -138,5 +138,5 @@ footer {
     height: 45px;
     color: #705CF2;
     background-color: #F2F2F2;
-    text-align: center;
+    text-align: left;
     padding-top: 25px;}
