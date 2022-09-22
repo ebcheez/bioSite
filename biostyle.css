@@ -68,17 +68,16 @@ img.intro-left {
     float: left;
     height: 200px;
     border: 1px solid #F2F2F2;}
+img.intro-center {
+    height: 200px;
+    margin: 0px 74px;
+    border: 1px solid #F2F2F2;}
 img.intro-right {
     float: right;
     height: 200px;
     border: 1px solid #F2F2F2;}
-img.intro-center {
-    height: 200px;
-    margin: 0px 71px;
-    border: 1px solid #F2F2F2;}
 .content-wrapper {
-    max-width: 100%;
-    min-width: 50%;
+    width: 98%;
     color: #F2F2F2;
     background-color: #9080F2;
     border-left: 1px solid #F2F2F2;
