@@ -10,6 +10,7 @@
     Revised on: 9/15/22 - added images, css 
     Revised on: 9/17/22 - working on the hobbies page 
     Revised on: 9/18/22 - placed images, added more content
+    Revised on: 9/20/22 - worked links in, added more content
 
     TODO: keep it clean, keep it DRY
 */
@@ -132,8 +133,7 @@ p a:visited {
 p a:hover {
     text-decoration: underline;}
 p a:active {
-    color: #800080;
-}    
+    color: #800080;}    
 footer {
     width: 100%;
     height: 45px;
