@@ -12,7 +12,8 @@
     Revised on: 9/18/22 - placed images, added more content
     Revised on: 9/20/22 - worked links in, added more content
     Revised on: 9/22/22 - tried <figure> in index. Added meta for screen sizes.
-
+    Revised on: 9/29/22 - Modest changes to home pics
+    
     TODO: keep it clean, keep it DRY.
     Work on making a responsive site.
     Intro-pics in a gallery, maybe?
@@ -65,27 +66,17 @@ li a:visited {
     color: #F2F2F2;}
 
 /*############ CONTENT ##############*/
-.opening-pics {
-    padding-bottom: 20px;}
-img.intro-left {
-    float: left;
-    height: 200px;
-    border: 1px solid #F2F2F2;}
-img.intro-center {
-    height: 200px;
-    margin: 0px 74px;
-    border: 1px solid #F2F2F2;}
-img.intro-right {
-    float: right;
-    height: 200px;
-    border: 1px solid #F2F2F2;}
+#opening-pics {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;}
 .content-wrapper {
     width: 98%;
     color: #F2F2F2;
     background-color: #9080F2;
     border-left: 1px solid #F2F2F2;
     border-right: 1px solid #F2F2F2;
-    margin: auto;
+    margin: 20px auto;
     padding: 10px;}
 .content-header {
     width: 98%;
@@ -114,7 +105,7 @@ article {
     width: 100%;}
 hgroup {
     margin-top: 15;}
-figure {
+article figure {
     float: left;
     height: 200px;
     padding: 5px;
