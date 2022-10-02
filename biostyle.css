@@ -103,31 +103,31 @@ header {
     border-left: 1px solid #f2f2f2;
     box-shadow: 0.625em 0.625em 0.3125em #333;}
 .content > p {
-    text-indent: 45px;
+    text-indent: 2.5em;
     text-align: justify;
     line-height: 1.4em;
     font-size: larger;
-    padding-left: 25px;
-    padding-right: 25px;}
+    padding: 0 2.5em;}
     
 article {
     clear: both;
     overflow: hidden;
     width: 100%;}
 hgroup {
-    margin-top: 15;}
-article figure {
+    margin-top: 1.5em;}
+figure {
     float: left;
-    height: 200px;
-    padding: 5px;
-    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    padding: 0.3em;
+    margin: 1.25em;
     border: 1px solid #F2F2F2;}
 figcaption {
     font-size: 90%;
     text-align: center;}
     
 p img {
-    margin-right: 1.0em;
+    margin-right: 1.2em;
     border-top: 1px solid #f2f2f2;
     border-left: 1px solid #f2f2f2;
     box-shadow: 0.625em 0.625em 0.3125em #333;}    
