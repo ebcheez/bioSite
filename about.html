@@ -1,67 +1,51 @@
-<!--
-    Project: bioSite
+<!-- 
+    Project: bioSite_RWD
     Filename: about.html
     Written by: Eric McCool
     Instructor: Krasso
     Purpose: About page for the bioSite project
-    Written on: 9/7/22 - initial commit
-    Revised on: 9/9/22 - created some pages
-    Revised on: 9/11/22 - created page header
-    Revised on: 9/15/22 - added images, css
-    Revised on: 9/17/22 - working on the hobbies page 
-    Revised on: 9/18/22 - placed images, added more content
-    Revised on: 9/20/22 - worked links in, added more content
-    Revised on: 9/22/22 - tried <figure> in index. Added meta for screen sizes.
-
-    TODO: content header is still a mess. work index images.
+    Note:   This is an updated version of the original 
+            bioSite project built to be a responsive layout.
+    Written on: 9/30/22
 -->
 
 <!-- create an html5 document -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!-- added these meta's from the VS Code Biolerplate I found by accident -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>RoxAnn McCool</title>
+        <title>RoxAnn McCool BioSite</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="biostyle.css" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&display=swap" rel="stylesheet">    
     </head>
-    
+
     <body>
-        <!-- add the header and navbar pattern -->
-        <header class="page-header">
-            <div id="bioName">
-                <p>RoxAnn McCool</p>
-            </div>
-            <div id="nav"><!-- struggles with the nav element -->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-            <div id="author">
-                <p>by Eric McCool</p>
-            </div>
-        </header><!-- end of header pattern -->
+        <!-- create the header -->
+        <header>
+            <h1 id="bioName">RoxAnn McCool</h1>
+            <p>A <b>bioSite</b> Project</p>
+        </header>
+
+        <!-- create the navbar -->
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div><!-- end of navbar -->
+
+        <!-- create the content header -->
+        <div id="content-header">
+            <h2>About RoxAnn</h2>
+        </div><!-- end of content header -->
 
         <!-- create about content -->
-        <!-- float a portrait top and left of the content paragraph -->
-        <div class="content-wrapper">
-
-            <!-- add the content header pattern -->
-            <header class="content-header">
-                <h2>About RoxAnn</h2>
-            </header><!-- end of content header pattern -->
-
-            <!-- add the content pattern for this page -->
+        <div id="content-container">
             <div class="content">
                 <p><img src="images/PortraitMamaEdit.PNG" alt="a picture of my honey" align="left"> RoxAnn McCool was born in the small town of Sidney, Nebraska on December 5, 1974. She was born to David and Sharon Smelley and has four older siblings. She also has six nieces and nephews that she showers with love and praise and spoils with gifts. She has taken care of her mother since she was thirteen when her father passed. Her mother and her are like sisters and the best of friends. She is deeply appreciated by her family and cares for her community the same way she cares for her family and friends. 
                 <p>RoxAnn is a craftsman, and is always making something, either for a person, an event, or a season. She uses a Cricut machine for printing and cutting the designs she makes online, and enlists her husband or brothers to cut lumber for her when she is onto something big. She also is not afraid to pick up a can of spray paint and make it the way she wants. Her favorite colors are purple and Husker Red. She takes tons of photos at sporting events and family gatherings which she then uses in her craft making.</p> 
@@ -69,13 +53,12 @@
                 <p>RoxAnn is also involved in her community. She loves to attend events for people or causes and is always willing to give to others. She especially loves friendly auctions and blind auctions when she knows the money is being used to support someone or something she believes in. She supports the Night of Hope for cancer survivors, as her father and mother-in-law both passed from cancer. She likes to walk for the American Foundation for Suicide Prevention and is very saddened when we lose a young person to suicide. She also supports Sidney Red Raider high school sports and the American Legion’s minor league baseball team in Sidney.</p>
                 <p>RoxAnn is truly an independent, self-sufficient, homegrown Nebraska woman who has an endless well of love for her family, friends, veterans, and community. She is truly a Sidney icon.</p>
             </div><!-- end of content -->
+        </div><!-- end of content-container -->
 
-            <!-- add the footer pattern -->
-            <footer>
-                &copy; 2022 RoxAnn McCool
-            </footer><!-- end of footer pattern -->
-
-        </div><!-- end of content-wrapper div -->
+        <!-- create the footer -->
+        <footer>
+            &copy; 2022 RoxAnn McCool
+        </footer>
 
     </body>
 </html>

@@ -1,33 +1,21 @@
-<!--
-    Project: bioSite
+<!-- 
+    Project: bioSite_RWD
     Filename: index.html
     Written by: Eric McCool
     Instructor: Krasso
     Purpose: Landing page for the bioSite project
-    Written on: 9/7/22 - initial commit
-    Revised on: 9/9/22 - created some pages
-    Revised on: 9/11/22 - created page header
-    Revised on: 9/15/22 - added images, css 
-    Revised on: 9/17/22 - working on the hobbies page 
-    Revised on: 9/18/22 - placed images, added more content
-    Revised on: 9/20/22 - worked links in, added more content
-    Revised on: 9/22/22 - tried <figure> in index. Added meta for screen sizes.
-    Revised on: 9/29/22 - Modest changes to home pics. failed to push.
-
-    TODO: Fix the images on this page. They are messing with the content headers on other pages.
-    Work on making this site responsive.
+    Note:   This is an updated version of the original 
+            bioSite project built to be a responsive layout.
+    Written on: 9/30/22
 -->
 
 <!-- create an html5 document -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!-- added these meta's from the VS Code Boilerplate I found by accident -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>RoxAnn McCool</title>
+        <title>RoxAnn McCool BioSite</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="biostyle.css" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,65 +23,56 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&display=swap" rel="stylesheet">    
     </head>
-    
+
     <body>
-        <!-- create the header and navbar pattern for every page-->
-        <header class="page-header">
-            <div id="bioName">
-                <p>RoxAnn McCool</p>
-            </div>
-            <div id="nav"><!-- struggles with the nav element -->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-            <div id="author">
-                <p>by Eric McCool</p>
-            </div>
-        </header><!-- end of header -->
-        
-        <!-- add 3 images inline -->
-        <div id="opening-pics">
+        <!-- create the header -->
+        <header>
+            <h1 id="bioName">RoxAnn McCool</h1>
+            <p>A <b>bioSite</b> Project</p>
+        </header>
+
+        <!-- create the navbar -->
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div><!-- end of navbar -->
+
+        <!-- create the gallery -->
+        <div class="gallery">
             <div class="gallery-item">
-                <figure>
-                    <img src="images/DodgersMamaEdit2.PNG" class="intro-left" alt="rox and eric at a dodger game" />
-                </figure>
+                <img src="images/FamilyMamaEdit.jpg" alt="the fam" width="534" height="400" />
             </div>
+
             <div class="gallery-item">
-                <figure>    
-                    <img src="images/huskerN.png" class="intro-center" alt="the nebraska N" />
-                </figure>
+                <img src="images/huskerNedit.png" alt="GBR" width="534" height="400"/>
             </div>
+
             <div class="gallery-item">
-                <figure>
-                    <img src="images/FamilyMamaEdit.jpg" class="intro-right" alt="roxann's family photo" />
-                </figure>
+                <img src="images/DodgersMamaEdit2.PNG" alt="go dodgers" width="534" height="400"/>
             </div>
-        </div><!-- end of opening pics div -->
+        </div><!-- end of gallery -->
 
-        <!-- create homepage content -->
-        <div class="content-wrapper">
+        <!-- create the content header -->
+        <div id="content-header">
+            <h2>Introducing RoxAnn</h2>
+        </div><!-- end of content header -->
 
-
-
-            <!-- create the content header for every page after home -->
-            <header class="content-header">
-                <h2>Introducing RoxAnn</h2>
-            </header><!-- end of content-header -->
-
-            <!-- create the content pattern for this page -->
+        <!-- create home content -->
+        <div id="content-container">
             <div class="content">
-                <p>Welcome to a website celebrating RoxAnn McCool. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem error consequatur vel sapiente soluta vero impedit neque deserunt? Deleniti neque velit earum obcaecati commodi minima nam accusamus sequi inventore saepe.</p><br><br>
+                <p>Welcome to a website celebrating RoxAnn McCool. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem error consequatur vel sapiente soluta vero impedit neque deserunt? Deleniti neque velit earum obcaecati commodi minima nam accusamus sequi inventore saepe.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, atque nihil? Adipisci voluptatem praesentium eos pariatur, maiores voluptate excepturi! Magni quas, totam ducimus quasi odit, voluptatibus, hic laborum eveniet est adipisci et. Dignissimos rerum, quaerat eligendi porro unde accusamus accusantium illum ab, dolor iste similique quos temporibus repellat quibusdam fuga, minima aliquam sequi ipsa magnam enim laudantium eius provident debitis. Autem exercitationem explicabo tempora illum quaerat quae repellendus quis voluptate. Eveniet maiores ullam iure tempora cumque veniam. Sunt non atque enim ratione quibusdam, praesentium nostrum, nobis consequuntur nam accusantium rem voluptatibus laudantium libero porro corrupti possimus nemo deserunt dolorum vel? Vel placeat excepturi quo at laboriosam, impedit voluptas molestiae, animi, non hic in quia cumque optio dolores suscipit velit? Ea ab et ut laboriosam tenetur ipsa est, modi maxime recusandae? Hic veritatis sequi cum fuga quo rerum eos a, nemo, nam iste maiores ratione eius. Tempore officiis culpa sequi expedita!</p>
+                <br>
             </div><!-- end of content -->
-            
-            <!-- create the footer pattern for every page -->
-            <footer>
-                &copy; 2022 RoxAnn McCool
-            </footer>
+        </div><!-- end of content-container -->
 
-        </div><!-- end of content-wrapper div -->
+        <!-- create the footer -->
+        <footer>
+            &copy; 2022 RoxAnn McCool
+        </footer>
+
 
     </body>
 </html>

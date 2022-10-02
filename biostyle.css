@@ -1,136 +1,111 @@
 /*
-    Project: bioSite
+    Project: bioSite_RWD
     Filename: biostyle.css
     Written by: Eric McCool
     Instructor: Krasso
     Purpose: Stylesheet for the bioSite project
-    Written on: 9/7/22 - initial commit
-    Revised on: 9/9/22 - created some pages
-    Revised on: 9/11/22 - created page header
-    Revised on: 9/15/22 - added images, css 
-    Revised on: 9/17/22 - working on the hobbies page 
-    Revised on: 9/18/22 - placed images, added more content
-    Revised on: 9/20/22 - worked links in, added more content
-    Revised on: 9/22/22 - tried <figure> in index. Added meta for screen sizes.
-    Revised on: 9/29/22 - Modest changes to home pics. failed to push.
-
-    TODO: keep it clean, keep it DRY.
-    Work on making a responsive site.
-    Intro-pics in a gallery, maybe?
+    Note:   This is an updated version of the original 
+            bioSite project built to be a responsive layout.
+    Written on: 9/30/22
 */
 
-body {
-    width: 960px;
-    margin: 0 auto;
+* {
+    box-sizing: border-box;}
+
+html {
     background-image: url("images/purpleSwirl.jpg");}
 
-/*############ PAGE HEADER ###############*/
-.page-header {
-    width: 100%;
-    height: 100px;
-    background-color: #705CF2;
-    border: solid 1px #F2F2F2;}
-#bioName, #nav, #author {
-    float: left;
-    margin: 0px;}
-#bioName {
-    height: 100%;
-    font-family: 'Oooh Baby', cursive;
-    font-size: 32px;
-    font-weight: bold;
-    color: #F2F2F2;
-    width: 25%;
-    text-align: center;}
-#nav {
-    width: 50%;
-    height: 100%;
-    font-family: 'Archivo', sans-serif;
-    font-size: medium;
-    text-align: center;
-    padding-top: 30px;}
-#author {
-    width: 24%;
-    height: 100%;
-    color: #F2F2F2;
-    font-size: 10px;
-    font-family: 'Archivo', sans-serif;
-    text-align: right;
-    padding-top: 60px;}
-li {
-    display: inline;
-    padding: 40px;}
-li a:link {
-    color: #F2F2F2;
-    text-decoration: none;}
-li a:visited {
-    color: #F2F2F2;}
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;}
 
-/*############ CONTENT ##############*/
-#opening-pics {
+header {
+    color: #f2f2f2;
+    background-color: #614bf2;
+    border-top: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    text-align: center;
+    padding: 1.25em;
+    margin: 1.0em 1.0em 0 1.0em;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
+#bioName {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 4em;}
+
+#navbar {
+    overflow: hidden;
+    background-color: #705cf2;
+    border-left: 1px solid #f2f2f2;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 1.0em 1.0em 1.0em;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
+#navbar a:link {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.8em 1.0em;
+    border-radius: 0.5em;
+    text-decoration: none;}
+#navbar a:visited {
+    color: #808080;}
+#navbar a:hover {
+    background-color: #614bf2;}
+#navbar a:active {
+    color: #333;}
+
+.gallery {
+    display: flex;
+    flex-direction: row;}
+.gallery-item {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 1.0em;}
+.gallery-item img {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;}
-.content-wrapper {
-    width: 98%;
-    color: #F2F2F2;
-    background-color: #9080F2;
-    border-left: 1px solid #F2F2F2;
-    border-right: 1px solid #F2F2F2;
-    margin: 20px auto;
-    padding: 10px;}
-.content-header {
-    width: 98%;
-    height: 75px;
-    font-family: 'Quicksand', sans-serif;
+    height: auto;
+    border-top: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
+
+#content-header, footer {
+    overflow: hidden;
+    background-color: #705cf2;
+    color: #f2f2f2;
     text-align: left;
-    background-color: #705CF2;
-    border: 1px solid #F2F2F2;
-    padding-left: 15px;
-    margin: auto;}
-.content p {
+    padding: 0.5em 1.0em;
+    margin: 0 1.0em;
+    border-top: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
+
+#content-container {
+    background-color: #f2f2f2;
+    color: #808080;
+    padding: 0.5em 1.0em;
+    margin: 1.0em 1.0em ;
+    border-top: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
+.content > p {
     text-indent: 45px;
     text-align: justify;
     line-height: 1.4em;
     font-family: 'Manrope', sans-serif;
     font-size: larger;
     padding-left: 25px;
-    padding-right: 25px;
-    }
-section.hobbies {
-    width: 100%;
-    float: left;}
-article {
-    clear: both;
-    overflow: auto;
-    width: 100%;}
-hgroup {
-    margin-top: 15;}
-article figure {
-    float: left;
-    height: 200px;
-    padding: 5px;
-    margin: 20px;
-    border: 1px solid #F2F2F2;}
-figcaption {
-    font-size: 90%;
-    text-align: center;}
+    padding-right: 25px;}
 p img {
-    margin-right: 25px;
-    margin-bottom: 10px;
-    border: 1px solid #F2F2F2;}
-p a:link {
-    color: #614BF2;
-    text-decoration: none;}
-p a:visited {
-    color: #614BF2;}
-p a:hover {
-    text-decoration: underline;}
-p a:active {
-    color: #800080;}    
+    margin-right: 1.0em;
+    border-top: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}    
+
 footer {
-    width: 100%;
-    height: 45px;
-    color: #705CF2;
-    background-color: #F2F2F2;
-    text-align: left;
-    padding-top: 25px;}
+    padding: 1.0em;    
+    margin-bottom: 1.5em;}
+
+
+
+
