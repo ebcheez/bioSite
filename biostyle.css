@@ -12,6 +12,9 @@
 
     TODO: make the hobbies page pics flexible
           start the contacts page
+          refactor. keep it clean, keep it DRY (shadow boxes)
+          header name text shadow?
+          change content links color or make them bold
 */
 
 /* The animation code for the background */
@@ -120,7 +123,7 @@ header {
     font-size: larger;
     padding: 0 2.5em;}
 
-/* style the hobbies page. make it flexible */
+/* style the hobbies page content */
 article {
     clear: both;
     overflow: hidden;
@@ -133,17 +136,21 @@ figure {
     height: auto;
     padding: 0.3em;
     margin: 1.25em;
-    border: 1px solid #F2F2F2;}
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
 figcaption {
     font-size: 90%;
     text-align: center;}
-    
+
+/* style about page portrait */
 p img {
     margin-right: 1.2em;
-    border-top: 1px solid #f2f2f2;
-    border-left: 1px solid #f2f2f2;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
     box-shadow: 0.625em 0.625em 0.3125em #333;}    
 
+/* style the footer */
 footer {
     padding: 1.0em;    
     margin-bottom: 1.5em;}
