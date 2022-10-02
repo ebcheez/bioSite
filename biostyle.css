@@ -7,7 +7,11 @@
     Note:   This is an updated version of the original 
             bioSite project built to be a responsive layout.
     Written on: 9/30/22 - initial commit. completed skeleton and home
-    Revised on: 10/1/22 - completed about, updated
+    Revised on: 10/1/22 - completed about, updated css
+    Revised on: 10/2/22 - created background animation
+
+    TODO: make the hobbies page pics flexible
+          start the contacts page
 */
 
 /* The animation code for the background */
@@ -19,9 +23,12 @@
     80% {background-color: magenta;}
     100% {background-color: violet;}}
 
+/*  box-sizing includes padding/border dims to box sizes.
+    * includes all elements */
 * {
     box-sizing: border-box;}
 
+/* Add backgrounds too the entire page */
 html {
     /* background-image: url("images/purpleSwirl.jpg"); */
     animation-name: purpleChange;
@@ -33,6 +40,7 @@ body {
     margin: 0;
     font-family: 'Manrope', sans-serif;}
 
+/* style the page header */
 header {
     color: #f2f2f2;
     background-color: #614bf2;
@@ -46,6 +54,7 @@ header {
     font-family: 'Oooh Baby', cursive;
     font-size: 4em;}
 
+/* style the navbar and links */
 #navbar {
     overflow: hidden;
     background-color: #705cf2;
@@ -70,6 +79,7 @@ header {
 #navbar a:active {
     color: #333;}
 
+/* style the home image gallery for responsiveness */
 .gallery {
     display: flex;
     flex-direction: row;}
@@ -84,6 +94,7 @@ header {
     border-left: 1px solid #f2f2f2;
     box-shadow: 0.625em 0.625em 0.3125em #333;}
 
+/* style the content of every page */
 #content-header, footer {
     overflow: hidden;
     background-color: #705cf2;
@@ -108,7 +119,8 @@ header {
     line-height: 1.4em;
     font-size: larger;
     padding: 0 2.5em;}
-    
+
+/* style the hobbies page. make it flexible */
 article {
     clear: both;
     overflow: hidden;
