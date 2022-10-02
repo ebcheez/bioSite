@@ -9,11 +9,24 @@
     Written on: 9/30/22
 */
 
+/* The animation code */
+@keyframes purpleChange {
+    0% {background-color: violet;}
+    20% {background-color: magenta;}
+    40% {background-color: darkorchid;}
+    60% {background-color: darkviolet;}
+    80% {background-color: magenta;}
+    100% {background-color: violet;}}
+
 * {
     box-sizing: border-box;}
 
 html {
-    background-image: url("images/purpleSwirl.jpg");}
+    /* background-image: url("images/purpleSwirl.jpg"); */
+    animation-name: purpleChange;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;}
 
 body {
     margin: 0;
