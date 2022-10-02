@@ -45,12 +45,13 @@ header {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 0.8em 1.0em;
+    padding: 1.0em 1.0em;
     border-radius: 0.5em;
     text-decoration: none;}
 #navbar a:visited {
     color: #808080;}
 #navbar a:hover {
+    border: 1px solid #f2f2f2;
     background-color: #614bf2;}
 #navbar a:active {
     color: #333;}
