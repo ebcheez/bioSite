@@ -9,6 +9,7 @@
     Written on: 9/30/22 - initial commit. completed skeleton and home
     Revised on: 10/1/22 - completed about, updated css
     Revised on: 10/2/22 - created background animation
+    Revised on: 10/7/22 - fixed hobby links
 
     TODO: make the hobbies page pics flexible
           start the contacts page
@@ -142,6 +143,9 @@ figure {
 figcaption {
     font-size: 90%;
     text-align: center;}
+p > a {
+    color: #705cf2;
+    text-decoration: none;}
 
 /* style about page portrait */
 p img {
