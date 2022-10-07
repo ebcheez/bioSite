@@ -9,10 +9,9 @@
     Written on: 9/30/22 - initial commit. completed skeleton and home
     Revised on: 10/1/22 - completed about, updated css
     Revised on: 10/2/22 - created background animation
-    Revised on: 10/7/22 - fixed hobby links
+    Revised on: 10/7/22 - fixed hobby links, styled the contacts page and form
 
     TODO: make the hobbies page pics flexible
-          start the contacts page
           refactor. keep it clean, keep it DRY (shadow boxes)
           header name text shadow?
 */
@@ -127,7 +126,10 @@ header {
 article {
     clear: both;
     overflow: hidden;
-    width: 100%;}
+    width: 100%;
+    border: 1px solid #808080;
+    border-radius: 0.5em;
+    margin: 2px;}
 hgroup {
     margin-top: 1.5em;}
 figure {
@@ -166,17 +168,21 @@ form {
     height: auto;
     float: right;
     margin: 1.25em 1.0em}
-
-input[type=text] {
+legend {
+    margin-bottom: 0.75em;}
+input[type=text], textarea {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.0em;
+    font-weight: 500;
+    color: #808080;
+    letter-spacing: 1px;
     width: 20em;
-    padding: 1.0em 0.75em;
+    padding: 0.75em;
     margin-bottom: 0.75em;
     border-radius: 0.5em;}
 textarea {
     width: 100%;
-    height: 5.0em;
-    padding: 1.0em 0.75em;
-    border-radius: 0.5em;}
+    height: 10.0em;}
 button {
     font-size: 1.0em;
     background-color: #705cf2;
@@ -186,9 +192,7 @@ button {
     border-radius: 0.5em;
     box-shadow: 0.625em 0.625em 0.3125em #333;}
 button:hover {
-    background-color: #614bf2;
-}
-    
+    background-color: #614bf2;}
 
 /* style the footer */
 footer {
