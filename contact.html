@@ -7,8 +7,10 @@
     Note:   This is an updated version of the original 
             bioSite project built to be a responsive layout.
     Written on: 9/30/22 - initial skeleton and commit
+    Revised on: 10/7/22 - created content
 
-    TODO: create an email form, maybe facebook link
+    TODO: create an email for Rox to accept emails from this site
+          create an email form, maybe add a facebook link
 -->
 
 <!-- create an html5 document -->
@@ -48,8 +50,21 @@
 
         <!-- create contact content -->
         <div id="content-container">
-            <div class="content">
-
+            <div class="content-contact">
+                <form action="mailto: kingdoodah@yahoo.com" method="post" enctype="text/plain" class="contact-item">
+                    <fieldset>
+                        <legend>Send RoxAnn a Message:</legend>
+                        <label class="label" for="name">Your Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label class="label" for="email">Your E-mail</label><br>
+                        <input type="text" id="email" name="mail"><br>
+                        <label for="message">Your Message to RoxAnn:</label>
+                        <textarea name="msg" id="message"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+                <p class="contact-item">Please feel free to send RoxAnn a question, request, or comment. She would love to hear from you. If you would like to order one of Roxann's crafts, check out Facebook's <a href="https://facebook.com/forsalesidney" target="_blank">For Sale Sidney</a> page.</p>
             </div><!-- end of content -->
         </div><!-- end of content-container -->
 

@@ -15,7 +15,6 @@
           start the contacts page
           refactor. keep it clean, keep it DRY (shadow boxes)
           header name text shadow?
-          change content links color or make them bold
 */
 
 /* The animation code for the background */
@@ -32,7 +31,7 @@
 * {
     box-sizing: border-box;}
 
-/* Add backgrounds too the entire page */
+/* Add backgrounds to the entire page */
 html {
     /* background-image: url("images/purpleSwirl.jpg"); */
     animation-name: purpleChange;
@@ -76,7 +75,7 @@ header {
     border-radius: 0.5em;
     text-decoration: none;}
 #navbar a:visited {
-    color: #808080;}
+    color: #f2f2f2;}
 #navbar a:hover {
     border: 1px solid #f2f2f2;
     background-color: #614bf2;}
@@ -147,12 +146,49 @@ p > a {
     color: #705cf2;
     text-decoration: none;}
 
-/* style about page portrait */
+/* style the about page portrait */
 p img {
     margin-right: 1.2em;
     border-top: 1px solid #333;
     border-left: 1px solid #333;
-    box-shadow: 0.625em 0.625em 0.3125em #333;}    
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
+    
+/* style the contact page and form */
+.content-contact {
+    display: flex;
+    flex-direction: row-reverse;}
+.content-item {
+    flex: 50%;
+    max-width: 50%;
+    padding: 1.0em;}
+form {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin: 1.25em 1.0em}
+
+input[type=text] {
+    width: 20em;
+    padding: 1.0em 0.75em;
+    margin-bottom: 0.75em;
+    border-radius: 0.5em;}
+textarea {
+    width: 100%;
+    height: 5.0em;
+    padding: 1.0em 0.75em;
+    border-radius: 0.5em;}
+button {
+    font-size: 1.0em;
+    background-color: #705cf2;
+    color: #f2f2f2;
+    padding: 8px;
+    margin: 0.75em 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0.625em 0.625em 0.3125em #333;}
+button:hover {
+    background-color: #614bf2;
+}
+    
 
 /* style the footer */
 footer {
