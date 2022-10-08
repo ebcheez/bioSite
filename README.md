@@ -5,4 +5,4 @@
 * HTML & CSS by Jon Duckett
 * Richard Krasso
 * Eric McCool
--completed on 10/8/22 
+* completed on 10/8/22 
