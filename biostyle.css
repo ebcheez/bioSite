@@ -10,10 +10,12 @@
     Revised on: 10/1/22 - completed about, updated css
     Revised on: 10/2/22 - created background animation
     Revised on: 10/7/22 - fixed hobby links, styled the contacts page and form
+    Revised on: 10/8/22 - used media queries to work with different screen sizes
 
     TODO: make the hobbies page pics flexible
           refactor. keep it clean, keep it DRY (shadow boxes)
           header name text shadow?
+          so not 'accessibility' friendly. tab-order?
 */
 
 /* The animation code for the background */
